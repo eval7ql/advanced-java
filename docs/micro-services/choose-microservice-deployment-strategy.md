@@ -12,7 +12,7 @@
 
 下图展示的是这种架构：
 
-![deployment-strategy-1](/images/deployment-strategy-1.png)
+![deployment-strategy-1](./images/deployment-strategy-1.png)
 
 这种模式有一些参数，一个参数代表每个服务实例由多少进程构成。例如，需要在 Apache Tomcat Server 上部署一个 Java 服务实例作为 web 应用。一个 Node.js 服务实例可能有一个父进程和若干个子进程构成。
 
@@ -40,7 +40,7 @@
 
 但是用单虚拟机单实例模式，一般将服务打包成虚拟机映像（image），例如一个 Amazon EC2 AMI。每个服务实例是一个使用此映像启动的 VM（例如，EC2 实例）。下图展示了此架构：
 
-![deployment-strategy-2](/images/deployment-strategy-2.png)
+![deployment-strategy-2](./images/deployment-strategy-2.png)
 
 Netfix 采用这种架构部署 video streaming service。Netfix 使用 Aminator 将每个服务打包成一个 EC2 AMI。每个运行服务实例就是一个 EC2 实例。
 
@@ -72,9 +72,9 @@ CloudNative 公司有一个用于创建 EC2 AMI 的 SaaS 应用，Bakery。用�
 
 下图展示了这种模式：
 
-![deployment-strategy-3](/images/deployment-strategy-3.png)
+![deployment-strategy-3](./images/deployment-strategy-3.png)
 
-使用这种模式需要将服务打包成容器映像。一个容器映像是一个运行包含服务所需库和应用的文件系统​。某些容器映像由完整的 linux 根文件系统组成，其它则是轻量级的。例如，为了部署 Java 服务，需要创建包含 Java 运行库的容器映像，也许还要包含 Apache Tomcat server，以及编译过的 Java 应用。
+使用这种模式需要将服务打包成容器映像。一个容器映像是一个运行包含服务所需库和应用的文件系统 ​。某些容器映像由完整的 linux 根文件系统组成，其它则是轻量级的。例如，为了部署 Java 服务，需要创建包含 Java 运行库的容器映像，也许还要包含 Apache Tomcat server，以及编译过的 Java 应用。
 
 一旦将服务打包成容器映像，就需要启动若干容器。一般在一个物理机或者虚拟机上运行多个容器，可能需要集群管理系统，例如 k8s 或者 Marathon，来管理容器。集群管理系统将主机作为资源池，根据每个容器对资源的需求，决定将容器调度到那个主机上。
 
@@ -102,8 +102,8 @@ Lambda 函数 是无状态服务。一般通过激活 AWS 服务处理请求。�
 
 - 直接方式，使用 web 服务请求
 - 自动方式，回应例如 AWS S3，DynamoDB，Kinesis 或者 Simple Email Service 等产生的事件
-- 自动方式，通过 AWS API 网关来处理应用客户端发出的 HTTP 请求​
-- 定时方式，通过 cron 响应​--很像定时器方式
+- 自动方式，通过 AWS API 网关来处理应用客户端发出的 HTTP 请求 ​
+- 定时方式，通过 cron 响应 ​--很像定时器方式
 
 可以看出，AWS Lambda 是一种很方便部署微服务的方式。基于请求计费方式意味着用户只需要承担处理自己业务那部分的负载；另外，因为不需要了解基础架构，用户只需要开发自己的应用。
 

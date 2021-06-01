@@ -1,4 +1,5 @@
 # 海量数据处理
+
 - [如何从大量的 URL 中找出相同的 URL？](/docs/big-data/find-common-urls.md)
 - [如何从大量数据中找出高频词？](/docs/big-data/find-top-100-words.md)
 - [如何找出某一天访问百度网站最多的 IP？](/docs/big-data/find-top-1-ip.md)
@@ -13,21 +14,26 @@
 ---
 
 ## 公众号
-GitHub 技术社区 Doocs 旗下唯一公众号“Doocs 开源社区”，欢迎关注，专注于分享有价值的文章；当然，也可以加我个人微信（备注：GitHub）。
+
+[Doocs](https://github.com/doocs) 技术社区旗下唯一公众号「**Doocs 开源社区**」​，欢迎扫码关注，**专注分享技术领域相关知识及行业最新资讯**。当然，也可以加我个人微信（备注：GitHub），拉你进技术交流群。
 
 <table>
-    <tr>
-      <td align="center" style="width: 200px;">
-        <a href="https://github.com/doocs">
-          <img src="./images/qrcode-for-doocs.jpg" style="width: 400px;"><br>
-          <sub>公众平台</sub>
-        </a><br>
-      </td>
-      <td align="center" style="width: 200px;">
-        <a href="https://github.com/yanglbme">
-          <img src="./images/qrcode-for-yanglbme.jpg" style="width: 400px;"><br>
-          <sub>个人微信</sub>
-        </a><br>
-      </td>
-    </tr>
+  <tr>
+    <td align="center" style="width: 200px;">
+      <a href="https://github.com/doocs">
+        <img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/qrcode-for-doocs.jpg" style="width: 400px;"><br>
+        <sub>公众平台</sub>
+      </a><br>
+    </td>
+    <td align="center" style="width: 200px;">
+      <a href="https://github.com/yanglbme">
+        <img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/qrcode-for-yanglbme.jpg" style="width: 400px;"><br>
+        <sub>个人微信</sub>
+      </a><br>
+    </td>
+  </tr>
 </table>
+
+关注「**Doocs 开源社区**」公众号，回复 **PDF**，即可获取本项目离线 PDF 文档（283 页精华），学习更加方便！
+
+<img src="https://cdn.jsdelivr.net/gh/doocs/advanced-java@main/images/pdf.png" style="width: 600px;"><br>
